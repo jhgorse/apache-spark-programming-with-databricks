@@ -122,7 +122,7 @@ display(final_df)
 
 # COMMAND ----------
 
-expected3 = [(78800000.29, 983.29), (47218429.0, 1086.83), (24797837.0, 1076.62)]
+expected3 = [(78800000.3, 983.29), (47218429.0, 1086.83), (24797837.0, 1076.62)]
 result3 = [(row.total_rev, row.avg_rev) for row in final_df.collect()]
 
 assert(expected3 == result3)
